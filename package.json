@@ -4,6 +4,7 @@
   "description": "Tasks from Framework EPAM Lab",
   "main": "index.js",
   "scripts": {
+    "pretest": "node ./test/utils/delete_reports.js",
     "test": "protractor ./test/config/protractor_config.js",
     "postinstall": "webdriver-manager update",
     "lint-init": "eslint --init"
@@ -27,6 +28,7 @@
     "cucumber": "^6.0.5",
     "cucumber-html-reporter": "^5.2.0",
     "cucumber-pretty": "^6.0.0",
+    "fs-extra": "^9.0.1",
     "protractor": "^7.0.0",
     "protractor-cucumber-framework": "^6.2.1",
     "yargs": "^16.1.0"

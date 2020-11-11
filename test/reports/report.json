@@ -1,21 +1,30 @@
 [
   {
     "keyword": "Feature",
-    "name": "Home Page Title",
-    "line": 1,
-    "id": "home-page-title",
-    "tags": [],
+    "name": "Raketa.by tests",
+    "line": 2,
+    "id": "raketa.by-tests",
+    "tags": [
+      {
+        "name": "@smoke",
+        "line": 1
+      }
+    ],
     "uri": "test\\features\\home_page_title.feature",
     "elements": [
       {
-        "id": "home-page-title;page-title",
+        "id": "raketa.by-tests;test-cart",
         "keyword": "Scenario",
-        "line": 4,
-        "name": "Page Title",
+        "line": 5,
+        "name": "Test cart",
         "tags": [
           {
-            "name": "@oz",
-            "line": 3
+            "name": "@smoke",
+            "line": 1
+          },
+          {
+            "name": "@cart",
+            "line": 4
           }
         ],
         "type": "scenario",
@@ -23,53 +32,79 @@
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 5,
-            "name": "I open \"https://oz.by/\"",
-            "match": {
-              "location": "test\\step_defenitions\\browser_steps.js:7"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 39832000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
             "line": 6,
-            "name": "Page title should be \"OZ.by — интернет-магазин. Книги, игры, косметика, товары для дома, творчества, подарки, продукты. Доставка по Беларуси.\"",
+            "name": "I open \"https://raketa.by/\"",
             "match": {
-              "location": "test\\step_defenitions\\browser_steps.js:11"
+              "location": "test\\step_defenitions\\browser_steps.js:8"
             },
             "result": {
               "status": "passed",
-              "duration": 428000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 7,
-            "name": "Page title should not be \"OZ.by — интернет-магазин. Книги, игры, косметика, товары для дома, творчества, подарки, продукты. Доставка по России.\"",
-            "match": {
-              "location": "test\\step_defenitions\\browser_steps.js:11"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 18000000
+              "duration": 14543000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 8,
-            "name": "I wait \"10\" seconds",
+            "line": 7,
+            "name": "I input \"скричер\" into searching field",
             "match": {
-              "location": "test\\step_defenitions\\browser_steps.js:16"
+              "location": "test\\step_defenitions\\browser_steps.js:12"
             },
             "result": {
               "status": "passed",
-              "duration": 10003000000
+              "duration": 8141000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "I click on the first item",
+            "match": {
+              "location": "test\\step_defenitions\\browser_steps.js:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4465000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "I click Buy",
+            "match": {
+              "location": "test\\step_defenitions\\browser_steps.js:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 480000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "I go to the cart",
+            "match": {
+              "location": "test\\step_defenitions\\browser_steps.js:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5729000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "I check cost with real cost \"84,90\"",
+            "match": {
+              "location": "test\\step_defenitions\\browser_steps.js:32"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 133000000
             }
           },
           {

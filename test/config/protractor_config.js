@@ -2,10 +2,10 @@ const path = require('path');
 const yargs = require('yargs')
     .option('tags', {
         alias: 't',
-        default: '@oz',
-        describe: 'Choose a web page',
-        choices: ['@oz', '@calculator'],
-        type: 'string'
+        default: '@smoke',
+        describe: 'Choose a test',
+        choices: ['@cart', '@titles', '@smoke'],
+        type: 'string',
     })
     .help()
     .argv;
@@ -27,7 +27,8 @@ exports.config = {
     cucumberOpts: {
         require: [path.resolve('./test/step_defenitions/**/*.js')],
         ignoreUncaughtExceptions: true,
-        format: ['json:test/reports/report.json', './node_modules/cucumber-pretty'],
+        format: ['json:test/reports/report.json',
+            './node_modules/cucumber-pretty'],
         tags: yargs.tags,
     },
     onPrepare: () => {

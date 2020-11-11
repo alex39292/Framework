@@ -1,0 +1,24 @@
+{
+  "name": "framework",
+  "version": "1.0.0",
+  "description": "Tasks from Framework EPAM Lab",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "lint-init": "eslint --init"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alex39292/Framework.git"
+  },
+  "author": "Aliaksandr Danilin aliaksandr_danilin1@epam.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alex39292/Framework/issues"
+  },
+  "homepage": "https://github.com/alex39292/Framework#readme",
+  "devDependencies": {
+    "eslint": "^7.13.0",
+    "eslint-config-google": "^0.14.0"
+  }
+}

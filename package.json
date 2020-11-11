@@ -22,8 +22,8 @@
     "eslint-config-google": "^0.14.0"
   },
   "dependencies": {
+    "@cucumber/cucumber": "^7.0.0-rc.0",
     "chai": "^4.2.0",
-    "cucumber": "^7.0.0-rc.0",
     "protractor": "^7.0.0",
     "protractor-cucumber-framework": "^6.2.1"
   }

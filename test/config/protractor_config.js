@@ -1,4 +1,14 @@
 const path = require('path');
+const yargs = require('yargs')
+    .option('tags', {
+        alias: 't',
+        default: '@oz',
+        describe: 'Choose a web page',
+        choices: ['@oz', '@calculator'],
+        type: 'string'
+    })
+    .help()
+    .argv;
 
 exports.config = {
     allScriptsTimeout: 60000,
@@ -18,7 +28,7 @@ exports.config = {
         require: [path.resolve('./test/step_defenitions/**/*.js')],
         ignoreUncaughtExceptions: true,
         format: ['json:test/reports/report.json'],
-        tags: '@smoke',
+        tags: yargs.tags,
     },
     onPrepare: () => {
         return browser.waitForAngularEnabled(false);

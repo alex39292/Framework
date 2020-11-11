@@ -2,14 +2,9 @@
   {
     "keyword": "Feature",
     "name": "Home Page Title",
-    "line": 2,
+    "line": 1,
     "id": "home-page-title",
-    "tags": [
-      {
-        "name": "@smoke",
-        "line": 1
-      }
-    ],
+    "tags": [],
     "uri": "test\\features\\home_page_title.feature",
     "elements": [
       {
@@ -19,8 +14,8 @@
         "name": "Page Title",
         "tags": [
           {
-            "name": "@smoke",
-            "line": 1
+            "name": "@oz",
+            "line": 3
           }
         ],
         "type": "scenario",
@@ -31,11 +26,11 @@
             "line": 5,
             "name": "I open \"https://oz.by/\"",
             "match": {
-              "location": "test\\step_defenitions\\browser_steps.js:8"
+              "location": "test\\step_defenitions\\browser_steps.js:7"
             },
             "result": {
               "status": "passed",
-              "duration": 12793000000
+              "duration": 19438000000
             }
           },
           {
@@ -44,20 +39,33 @@
             "line": 6,
             "name": "Page title should be \"OZ.by — интернет-магазин. Книги, игры, косметика, товары для дома, творчества, подарки, продукты. Доставка по Беларуси.\"",
             "match": {
-              "location": "test\\step_defenitions\\browser_steps.js:12"
+              "location": "test\\step_defenitions\\browser_steps.js:11"
             },
             "result": {
               "status": "passed",
-              "duration": 100000000
+              "duration": 644000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "Page title should not be \"OZ.by — интернет-магазин. Книги, игры, косметика, товары для дома, творчества, подарки, продукты. Доставка по России.\"",
+            "match": {
+              "location": "test\\step_defenitions\\browser_steps.js:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 21000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 7,
+            "line": 8,
             "name": "I wait \"10\" seconds",
             "match": {
-              "location": "test\\step_defenitions\\browser_steps.js:17"
+              "location": "test\\step_defenitions\\browser_steps.js:16"
             },
             "result": {
               "status": "passed",

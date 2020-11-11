@@ -8,9 +8,9 @@ When('I open {string}', url => {
     return browser.get(url);
 });
 
-Then(/^Page title should (not)?be "([^"]*)"$/, async (title) => {
+Then(/^Page title should (not )?be "([^"]*)"$/, async (notArg, title) => {
     const pageTitle = await browser.getTitle();
-    expect(pageTitle).to.be.equal(title);
+    notArg ? expect(pageTitle).to.not.be.equal(title) : expect(pageTitle).to.be.equal(title);
 });
 
 When('I wait "{int}" seconds', (seconds) => {

@@ -1,6 +1,6 @@
-@smoke
 Feature: Home Page Title
 
+@oz
 Scenario: Page Title
     Given I open "https://oz.by/"
     Then Page title should be "OZ.by — интернет-магазин. Книги, игры, косметика, товары для дома, творчества, подарки, продукты. Доставка по Беларуси."

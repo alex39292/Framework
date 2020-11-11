@@ -7,6 +7,12 @@ const yargs = require('yargs')
         choices: ['@cart', '@titles', '@smoke'],
         type: 'string',
     })
+    .option('instances', {
+        alias: 'i',
+        default: 1,
+        describe: 'Choose number of instances to start test',
+        type: 'number',
+    })
     .help()
     .argv;
 
@@ -17,6 +23,8 @@ exports.config = {
     framework: 'custom',
     frameworkPath: require.resolve('protractor-cucumber-framework'),
     capabilities: {
+        shardTestFiles: yargs.instances > 1,
+        maxInstances: yargs.instances,
         browserName: 'chrome',
         chromeOptions: {
             args: ['--no-sandbox', '--window-size=1920,1080'],

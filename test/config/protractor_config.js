@@ -9,7 +9,7 @@ exports.config = {
     capabilities: {
         browserName: 'chrome',
         chromeOptions: {
-            args: ['--no-sandbox', '--window-size=1920,1080']
+            args: ['--no-sandbox', '--window-size=1920,1080'],
         },
     },
     disableChecks: true,
@@ -17,7 +17,7 @@ exports.config = {
     cucumberOpts: {
         require: [path.resolve('./test/step_definitions/**/*.js')],
         ignoreUncaughtExceptions: true,
-        format: ['json:.test/reports/report.json'],
+        format: ['json:test/reports/report.json'],
         tags: '@smoke',
     },
     onPrepare: () => {

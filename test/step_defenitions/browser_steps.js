@@ -15,4 +15,4 @@ Then(/^Page title should be "OZ.by — интернет-магазин. Книг
 
 When(/^I wait 10 seconds$/, () => {
     return browser.sleep(10000);
-})
+});

@@ -17,7 +17,10 @@ exports.config = {
     cucumberOpts: {
         require: [path.resolve('./test/step_definitions/**/*.js')],
         ignoreUncaughtExceptions: true,
-        format: ['json:./reports/report.json'],
+        format: ['json:.test/reports/report.json'],
         tags: '@smoke',
+    },
+    onPrepare: () => {
+        return browser.waitForAngularEnabled(false);
     },
 };

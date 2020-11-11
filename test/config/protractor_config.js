@@ -15,7 +15,7 @@ exports.config = {
     disableChecks: true,
     directConnect: true,
     cucumberOpts: {
-        require: [path.resolve('./test/step_definitions/**/*.js')],
+        require: [path.resolve('./test/step_defenitions/**/*.js')],
         ignoreUncaughtExceptions: true,
         format: ['json:test/reports/report.json'],
         tags: '@smoke',

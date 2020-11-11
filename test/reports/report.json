@@ -30,8 +30,12 @@
             "keyword": "Given ",
             "line": 5,
             "name": "I open oz.by",
+            "match": {
+              "location": "test\\step_defenitions\\browser_steps.js:8"
+            },
             "result": {
-              "status": "undefined"
+              "status": "passed",
+              "duration": 15620000000
             }
           },
           {
@@ -39,8 +43,12 @@
             "keyword": "Then ",
             "line": 6,
             "name": "Page title should be \"OZ.by — интернет-магазин. Книги, игры, косметика, товары для дома, творчества, подарки, продукты. Доставка по Беларуси.\"",
+            "match": {
+              "location": "test\\step_defenitions\\browser_steps.js:12"
+            },
             "result": {
-              "status": "undefined"
+              "status": "passed",
+              "duration": 1180000000
             }
           },
           {
@@ -48,8 +56,12 @@
             "keyword": "When ",
             "line": 7,
             "name": "I wait 10 seconds",
+            "match": {
+              "location": "test\\step_defenitions\\browser_steps.js:17"
+            },
             "result": {
-              "status": "undefined"
+              "status": "passed",
+              "duration": 10004000000
             }
           },
           {
@@ -60,7 +72,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 3000000
+              "duration": 2000000
             }
           }
         ]

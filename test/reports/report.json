@@ -13,18 +13,18 @@
     "uri": "test\\features\\home_page_title.feature",
     "elements": [
       {
-        "id": "raketa.by-tests;test-cart",
+        "id": "raketa.by-tests;page-titles-https://raketa.by/novinki-igrushki/",
         "keyword": "Scenario",
-        "line": 5,
-        "name": "Test cart",
+        "line": 21,
+        "name": "Page Titles https://raketa.by/novinki-igrushki/",
         "tags": [
           {
             "name": "@smoke",
             "line": 1
           },
           {
-            "name": "@cart",
-            "line": 4
+            "name": "@titles",
+            "line": 13
           }
         ],
         "type": "scenario",
@@ -32,79 +32,178 @@
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 6,
+            "line": 15,
+            "name": "I open \"https://raketa.by/novinki-igrushki/\"",
+            "match": {
+              "location": "test\\step_defenitions\\browser_steps.js:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 43386000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 16,
+            "name": "Page title should be \"Игрушки Новинки - интернет-магазин Ракета\"",
+            "match": {
+              "location": "test\\step_defenitions\\browser_steps.js:37"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1338000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 17,
+            "name": "I wait \"1\" seconds",
+            "match": {
+              "location": "test\\step_defenitions\\browser_steps.js:42"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1008000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "raketa.by-tests;page-titles-https://raketa.by/",
+        "keyword": "Scenario",
+        "line": 22,
+        "name": "Page Titles https://raketa.by/",
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 1
+          },
+          {
+            "name": "@titles",
+            "line": 13
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 15,
             "name": "I open \"https://raketa.by/\"",
             "match": {
               "location": "test\\step_defenitions\\browser_steps.js:8"
             },
             "result": {
               "status": "passed",
-              "duration": 14543000000
+              "duration": 8509000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 16,
+            "name": "Page title should be \"Детские игрушки купить в Минске - магазин игрушек Ракета\"",
+            "match": {
+              "location": "test\\step_defenitions\\browser_steps.js:37"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 31000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 7,
-            "name": "I input \"скричер\" into searching field",
+            "line": 17,
+            "name": "I wait \"1\" seconds",
             "match": {
-              "location": "test\\step_defenitions\\browser_steps.js:12"
+              "location": "test\\step_defenitions\\browser_steps.js:42"
             },
             "result": {
               "status": "passed",
-              "duration": 8141000000
+              "duration": 1016000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "raketa.by-tests;page-titles-https://raketa.by/zdorovennye-skidki/",
+        "keyword": "Scenario",
+        "line": 23,
+        "name": "Page Titles https://raketa.by/zdorovennye-skidki/",
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 1
+          },
+          {
+            "name": "@titles",
+            "line": 13
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 15,
+            "name": "I open \"https://raketa.by/zdorovennye-skidki/\"",
+            "match": {
+              "location": "test\\step_defenitions\\browser_steps.js:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4041000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 8,
-            "name": "I click on the first item",
+            "line": 16,
+            "name": "Page title should be \"Здоровенные скидки - интернет-магазин Ракета\"",
             "match": {
-              "location": "test\\step_defenitions\\browser_steps.js:17"
+              "location": "test\\step_defenitions\\browser_steps.js:37"
             },
             "result": {
               "status": "passed",
-              "duration": 4465000000
+              "duration": 55000000
             }
           },
           {
             "arguments": [],
-            "keyword": "And ",
-            "line": 9,
-            "name": "I click Buy",
+            "keyword": "When ",
+            "line": 17,
+            "name": "I wait \"1\" seconds",
             "match": {
-              "location": "test\\step_defenitions\\browser_steps.js:22"
+              "location": "test\\step_defenitions\\browser_steps.js:42"
             },
             "result": {
               "status": "passed",
-              "duration": 480000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 10,
-            "name": "I go to the cart",
-            "match": {
-              "location": "test\\step_defenitions\\browser_steps.js:27"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 5729000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 11,
-            "name": "I check cost with real cost \"84,90\"",
-            "match": {
-              "location": "test\\step_defenitions\\browser_steps.js:32"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 133000000
+              "duration": 1010000000
             }
           },
           {

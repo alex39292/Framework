@@ -1,4 +1,11 @@
 const path = require('path');
+const reporterHtml = require('cucumber-html-reporter');
+const reportOptions = {
+    theme: 'bootstrap',
+    jsonFile: path.join(__dirname, '../reports/report.json'),
+    output: path.join(__dirname, '../reports/report-html.html'),
+    reportSuitesAsScenarios: true,
+};
 const yargs = require('yargs')
     .option('tags', {
         alias: 't',
@@ -41,5 +48,8 @@ exports.config = {
     },
     onPrepare: () => {
         return browser.waitForAngularEnabled(false);
+    },
+    afterLaunch: () => {
+        return reporterHtml.generate(reportOptions);
     },
 };

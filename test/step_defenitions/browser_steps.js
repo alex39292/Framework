@@ -1,19 +1,18 @@
-/* eslint-disable max-len */
 /* eslint-disable new-cap */
 const {When, Then, setDefaultTimeout} = require('cucumber');
 const {expect} = require('chai');
 
 setDefaultTimeout(60000);
 
-When(/^I open oz.by$/, function() {
-    return browser.get('https://oz.by/');
+When('I open {string}', url => {
+    return browser.get(url);
 });
 
-Then(/^Page title should be "OZ.by — интернет-магазин. Книги, игры, косметика, товары для дома, творчества, подарки, продукты. Доставка по Беларуси."$/, async function() {
+Then(/^Page title should (not)?be "([^"]*)"$/, async (title) => {
     const pageTitle = await browser.getTitle();
-    expect(pageTitle).to.be.equal('OZ.by — интернет-магазин. Книги, игры, косметика, товары для дома, творчества, подарки, продукты. Доставка по Беларуси.');
+    expect(pageTitle).to.be.equal(title);
 });
 
-When(/^I wait 10 seconds$/, function() {
-    return browser.sleep(10000);
+When('I wait "{int}" seconds', (seconds) => {
+    return browser.sleep(seconds * 1000);
 });

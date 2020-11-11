@@ -29,13 +29,13 @@
             "arguments": [],
             "keyword": "Given ",
             "line": 5,
-            "name": "I open oz.by",
+            "name": "I open \"https://oz.by/\"",
             "match": {
               "location": "test\\step_defenitions\\browser_steps.js:8"
             },
             "result": {
               "status": "passed",
-              "duration": 15620000000
+              "duration": 12793000000
             }
           },
           {
@@ -48,20 +48,20 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1180000000
+              "duration": 100000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
             "line": 7,
-            "name": "I wait 10 seconds",
+            "name": "I wait \"10\" seconds",
             "match": {
               "location": "test\\step_defenitions\\browser_steps.js:17"
             },
             "result": {
               "status": "passed",
-              "duration": 10004000000
+              "duration": 10005000000
             }
           },
           {

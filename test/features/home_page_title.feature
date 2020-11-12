@@ -5,10 +5,10 @@ Feature: Raketa.by tests
 Scenario: Test cart
     Given I open "https://raketa.by/"
     When I input "скричер" into searching field
-    Then I click on the first item
-    And I click Buy
-    And I go to the cart
-    Then I check cost with real cost "84,90"
+    When I click on the first item
+    When I click Buy
+    When I go to the cart
+    When I check cost with real cost "84,90"
 
 @titles
 Scenario Outline: Page Titles <URL>

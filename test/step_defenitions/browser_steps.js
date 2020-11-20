@@ -1,11 +1,11 @@
 /* eslint-disable new-cap */
-const {When, Then, setDefaultTimeout} = require('cucumber');
+const {Given, When, Then, setDefaultTimeout} = require('cucumber');
 const {expect} = require('chai');
 const {Key, ExpectedConditions} = require('protractor');
 
 setDefaultTimeout(60000);
 
-When('I open {string}', (url) => {
+Given('I open {string}', (url) => {
     return browser.get(url);
 });
 
@@ -25,12 +25,15 @@ When('I click Buy', async () => {
 });
 
 When('I go to the cart', async () => {
+    await browser.sleep(1000);
     await browser.wait(ExpectedConditions
         .elementToBeClickable($('.ok-shcart__info')), 10000);
     return await $('.ok-shcart__info').click();
 });
 
-When('I check cost with real cost {string}', async (realCost) => {
+Then('I check cost with real cost {string}', async (realCost) => {
+    await browser.wait(ExpectedConditions
+        .elementToBeClickable($('span.ok-order__sum-val:nth-child(3)')), 10000);
     const cost = await $('span.ok-order__sum-val:nth-child(3)').getText();
     expect(cost).to.be.equal(realCost);
 });
@@ -38,8 +41,4 @@ When('I check cost with real cost {string}', async (realCost) => {
 Then('Page title should be {string}', async (title) => {
     const pageTitle = await browser.getTitle();
     expect(pageTitle).to.be.equal(title);
-});
-
-When('I wait "{int}" seconds', (seconds) => {
-    return browser.sleep(seconds * 1000);
 });

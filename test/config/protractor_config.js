@@ -1,5 +1,6 @@
 const path = require('path');
 const reporterHtml = require('cucumber-html-reporter');
+
 const reportOptions = {
     theme: 'bootstrap',
     jsonFile: path.join(__dirname, '../reports/report.json'),

@@ -33,3 +33,6 @@ jspm_packages/
 .eslintcache
 .eslintignore
 .eslintrc.js
+
+#Reports
+test/reports
